@@ -2,63 +2,71 @@
 *{
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
-    margin: 0px;
+    margin: 0;
+    max-width: 1440px;
   
 }
-a, li {
+a {
     text-decoration: none;
     color: black;
 }
+.main {
 
-h1
+    box-sizing: border-box;
+
+}
+h1{
+    font-size: 20px;
+}
+
 h2{
   
-    padding: 0px 20px 0px 10px;
+    padding: 0px 0px 25px 10px;
 }
 h3{
-    font-size: 30px;
+    font-size: 25px;
+    padding: 15px 0 15px  15px;
+
 }
 h4{
-    font-size: 23px;
+    font-size: 18px;
 }
+p{
+    font-size: 
+        17px;
+    }
+
 /* -----Header----- */
 /* ---------------- */
 
-header{
-    display: flex;
-    justify-content: space-between;   
-    align-items: center;
-    flex-wrap: wrap;
-    max-width: 2000px;
 
+#nav-bar{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
 }
-header nav ul li {
-    padding: 30px ;
-    
+#navigation {
+    display: flex;
 }
-header nav ul li{
+.nav-ba-element {
+    padding: 40px ;
+    font-size: 20px ;
     border-top: transparent solid 3px;
-}
-header nav ul li:hover {
-    border-top: #0065fc solid 3px ;
 }
 
 #logo-booki{
     width: 150px;
     margin-left: 30px;
-}
+}  
 
-ul{
-    list-style-type: none;
-    display: flex;   
-}
-ul li {
-    padding-left: 60px ;
-    
-}
-a:hover {
+
+.nav-ba-element:hover {
+    border-top: #0065fc solid 3px ;
     color: #0065fc;
 }
+
+
 
 /* -----Main----- */
 /* ---------------- */
@@ -74,57 +82,90 @@ main{
     display: inline-flex;
     border: 0.5px solid  #f2f2f2 ;
     background-color:#f2f2f2;
-    border-radius: 15px;
+    border-radius: 20px;
 }
 
 #icon-maps{
-    padding: 10px 15px;
-}   
+    padding: 22px ;
+} 
+
+::placeholder{
+    color: black;
+}  
 
 input{
     border-color: transparent;
+    font-weight: bold ;  
+    width: 300px;
+    font-size: 130%;
+    padding-left: 35px;
 }
 
 button{
+
+
     background-color: #0065fc;
     border-color: transparent;
     border-end-end-radius: 15px;
     border-start-end-radius: 15px;
     color: white;
+    padding: 17px;
 }
 
-#filters {
+
+.fa-magnifying-glass{
+    
+    color: transparent;
+    position: absolute;
+}
+
+
+#research-button{
+    font-size: 17px;
+    font-weight: 600;
+}
+
+#filters, .filters-list {
     display: flex;
     align-items: center;
     flex-wrap: wrap;    
 }
+
+.filter {
+    border: 2px solid #d6d6d6;
+    padding: 19px 25px 19px 80px;
+    border-radius: 82px;
+    font-size: 15px;
+
+}
+
+#filter-title{
+    margin-right: 60px;
+}
+
 
 .filter-bloc {
     display: flex;
     align-items: center;
-    flex-wrap: wrap;    
-    border-radius: 50px;
-    border: 2px solid #f2f2f2;
-    margin: 10px 10px 0 10px ;
+    flex-wrap: wrap;   
+    transition:  2s; 
+
     cursor: pointer;
+    margin:  0 35px 20px 0 ;
+
 }
+
 
 #economique, #romantique{
-    min-width: 290px;
+    min-width: 125px;
 }
 #familial{
-    min-width: 230px;
+
+    min-width: 100px;
 }
 #animaux{
-    min-width: 370px;
-}
-
-
-
-.filter-bloc h2{
-    font-size: 27px;
-    margin: 0 30px 0 15px;
-  
+ 
+    min-width: 400px;
 }
 
 
@@ -133,23 +174,31 @@ button{
  } 
 
 #filters .filter-bloc .filter-icon {
-    height: 75px;
-    width: 75px;
+    height: 60px;
+    width: 60px;
    
     background-color: #DEEDFF;
     border-radius:50px ;
     display: flex;
     align-items: center;
     justify-content: center; 
+    position: absolute;
+}
+.icon-list{
+    color: #0065fc;
+}
+.filter:hover{
+    background-color:#f2f8dc
+}
+.filter-bloc:hover{
+    transform: scale(1.1);
 }
 
 /* ------------infos---------- */
 
 .info{
     display: flex;
-    align-items: center;
-    padding : 20px 0 20px 0;
-  
+    align-items: center; 
 }
 
 #icon-info{
@@ -170,9 +219,7 @@ button{
 
 .marseille-most-popular{
     display: flex; 
-
     flex-wrap: wrap;
-
 }
 
 
@@ -181,70 +228,89 @@ button{
     border: #f2f2f2 solid 1px;
     border-radius: 40px;
     display: flex;
-    max-width: 1200px;
-    width: 60%;
-  
-  
     flex-direction: column;
+    flex-grow: 1;
     padding: 20px;
-    margin: 20px 20px 20px 0;
+    margin: 20px 10px 20px 5px;
+    width: 68%;
+    min-width: 300px;
 }
 
+.top-six{
+    display: flex;
+    justify-content: space-around;
+     flex-wrap: wrap;
+     padding-bottom: 20px;
+
+    }
 
 .left-bloc{
     
     display: flex;
     flex-direction: column;
-    padding-bottom: 70px;
-    border: 5px solid white;
+    border: 3px solid white;
     border-radius: 30px  ;
     background-color: white;
-    height: 250px;
-    width: 30%;
-    margin: 25px 25px 25px 0;
+    width: 28%;
+    min-width: 250px;
+    margin: 25px 0 0 0;
+    box-shadow: 0 0 16px #ecebeb59;
+    box-sizing: content-box;
+    box-shadow: 0 0 16px #888888;
+    transition:  2s;
 }
 
+.left-bloc:hover, .right-bloc:hover, .activity-marseille:hover{
+    transform:scale(1.06);
+}
+
+.right-bloc{
+
+    
+    display: flex;
+    border: 3px solid white;
+    border-radius: 30px  ;
+    background-color: white;
+    margin: 15px;
+    box-sizing: border-box;
+    height: 160px;
+    box-shadow: 0 0 16px #888888;
+    transition:  2s;
+}
 .left-bloc img {
     
   
     border: solid transparent 1px;
     border-radius: 30px 30px 0 0;
-    height: 150px;
-    width: 100%;
+    height: 130px;
+    width : 100%;
     object-fit: cover;
-        
-        
+    
+    
     }
     .right-bloc img {
-      
-    
+        
+        
         border: solid transparent 1px;
         border-radius: 30px  0 0 30px;
-        height: 184px;
-        width: 192px;   
+        height: 100%;
+        width: 35%;   
         object-fit: cover;
     }
     .left-bloc h4, .left-bloc .stars,.left-bloc .price-marseille{
-        padding: 5px;
+        padding: 3px 0 3px 15px;
     }
     
-    
-    .top-six{
-        display: flex;
-        justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-    
-
 
 .stars{
     color: #0065fc;
+    font-size: 15px;
 }
 
 .title-most-popular-icon{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     font-size: 30px ;
   
 }
@@ -252,39 +318,31 @@ button{
 .most-popular{
     display: flex;
     flex-direction: column;
+    flex-grow: 2;
     background-color: #f2f2f2;
     border: #f2f2f2 solid 1px;
     border-radius: 40px;
     padding: 20px;
-    margin: 20px ;
-    width: 30%;
-    min-width: 500px;
+    margin: 20px 10px 20px 5px;
+    width: 28%;
+    min-width: 400px;
    
 }
-.right-bloc{
-
-    
+.right{
     display: flex;
-    border: 5px solid white;
-    border-radius: 30px  ;
-    background-color: white;
-    margin: 25px 25px 25px 0;
-    box-sizing: border-box;
-    height: 192px;
-  
-  
-  
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 
 .right-bloc h4 {
-    padding: 15px 0 10px 20px;
+    padding: 15px 25px 10px 20px;
 }
 .right-bloc p{
     padding: 0px 0 10px 20px;
 }
 .right-bloc .stars{
-    padding: 35px 0 10px 20px;
+    padding: 20px 0 10px 20px;
  
 }
 
@@ -293,3 +351,315 @@ button{
 }
 
 
+.nad-star {
+    color: rgba(179, 177, 177, 0.205);
+}
+
+/* section activités  */
+
+
+
+/* footer  */
+
+.footer{
+    background-color: #f2f2f2;
+}
+.footer-list {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    width: 1440px;
+    margin-top: 50px;
+    box-sizing: border-box;
+}
+
+.sublist {
+
+  padding: 35px;
+  margin: 15px 100px 0 15px;
+
+
+}
+.sublist ul, .sublist ul li{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0 10px 0 ;
+}
+
+.sublist h3{
+    padding: 0;
+}
+.sublist li {
+    font-size: 130%;
+}
+
+/* brouillon */
+
+.activity {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: space-between;
+    height: 550px;
+    justify-content: space-around;
+}
+
+.activity-marseille {
+    max-width: 23%;
+    max-height: 600px;
+    border-radius: 30px;
+    transition:  2s;
+    box-shadow: 3px 3px 3px #f2f2f2;
+}
+
+.activity img {
+    object-fit: cover;
+    width: 320px;
+    max-height: 520px;
+    width: 100%;
+    border-radius: 30px 30px 0 0;
+}
+
+.act-place h4 {
+    padding: 20px;
+    font-size: 100%;
+    min-width: 250px;
+}
+    
+
+
+.high{
+    height: 468px;
+}
+.midle{
+    height: 200px;
+}
+
+.short{
+    height: 180px;
+}
+
+
+ 
+
+    
+/*   format tablette  */
+
+@media screen and (max-width: 992px) {
+
+#filters {
+
+    align-items: flex-start;
+
+}
+#filter-title{
+    margin-right: 100%;
+}
+
+.filter{
+    font-size: 130%;
+
+}
+.filter-icon{
+    font-size: 130%;
+    padding: 33px;
+}
+
+.marseille-most-popular{
+  flex-wrap: wrap-reverse;
+}
+
+.activity-marseille{
+    display: flex;
+    flex-direction: column;
+    min-width: 220px;
+    width: 100%;
+    max-width: none;
+    margin-bottom: 30px;
+}
+.right-bloc{
+    height: 180px;
+
+}
+.right h4, .right p, .right .stars{
+    font-size: 130%;
+}
+
+
+.activity{
+
+    height: 100%;
+   
+
+}
+
+.activity-img{
+    width: 100%;
+}
+.activities{
+    width: 100%;
+
+}
+.high{
+    width: 100%;
+}
+.marseille, .most-popular{
+    width: 100%;
+    margin: 20px 0;
+
+}
+.activity img{
+    height: 200px;
+}
+.sublist li {
+    font-size: 150%;
+}
+
+.act-place{
+    font-size: 150%;
+}
+/*   format téléphone  */
+
+@media screen and (max-width: 762px) {
+
+body{
+    min-width: 500px;
+}
+#nav-bar{
+    flex-direction: column;
+    align-items: center;
+}
+#navigation{
+    display: flex;
+    width: 100%;
+}
+
+.nav-ba-element{
+    padding-bottom: 20px;
+    width: 50%;
+    text-align: center;
+    font-size: 25px;
+    border-bottom: 3px solid #f2f2f2;
+    border-top: none;
+}
+
+.nav-ba-element:hover{
+    border-top: none;
+    border-bottom: #0065fc solid 3px;
+}
+#logo-booki{
+width: inherit;
+}
+
+#research{
+    margin: 20px; 
+
+}
+.title1, p{
+    font-size: 130%;
+}
+
+
+
+#icon-maps{
+    padding: 28px;
+    background-color: #f2f2f2;
+    border-radius: 25px 0 0 25px ;
+    font-size: 200%;
+}
+
+button{
+    border-radius: 25px;
+    padding: 25px 25px 0;   
+
+}
+
+#research-city{
+    background-color: white;
+    border-radius: 35px;
+    width: 97%;
+  
+}
+input{
+    background-color: white;
+
+}
+::placeholder{
+    font-size: 150%;
+}
+
+
+form{
+    text-align: center;
+    width: max-content;
+    
+}
+
+.fa-magnifying-glass{
+    color: inherit;
+    font-size: 30px;
+    padding: 0;
+    position: inherit;
+
+
+}
+#text-button{
+    color: transparent;
+    font-size: 0px;
+}
+
+#filters-title{
+    margin-left: 100%;
+}
+
+
+.most-popular{
+    border-radius: 0;
+    margin: 0;
+    padding: 30px 20px;
+}
+.marseille{
+    background: none;
+    border: none;
+
+}
+.top-six{
+    display: flex;
+    flex-direction: column;
+
+}
+.left-bloc{
+    width: 100%;
+}
+.left-bloc img{
+   height: 180px;
+
+}
+.left-bloc h4,  .left-bloc .price-marseille {
+    padding: 4px 0 4px 20px;
+    font-size: 180%;
+}
+.left-bloc .stars{
+    font-size: 125%;
+    padding: 5px 0 15px 20px;
+}
+.right-bloc img{
+    width: 45%;
+}
+#show-more{
+    font-size: 160%;
+}
+h3{
+    font-size: 35px;
+}
+
+.activities{
+    padding: 20px;
+}
+
+h4{
+    font-size: 25px;
+}
+
+
+}
+}
