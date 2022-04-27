@@ -109,6 +109,11 @@ button {
     border-start-end-radius: 15px;
     color: white;
     padding: 17px;
+    transition: 01s;
+
+}
+button:hover{
+    transform: scale(1.05);
 }
 
 .fa-magnifying-glass {
@@ -166,6 +171,7 @@ button {
 
 .icon-list {
     color: #0065fc;
+    font-size: 130%;
     transition: 1s;
 }
 .icon-list:hover{
@@ -234,7 +240,6 @@ button {
     width: 30%;
     min-width: 250px;
     margin: 25px 0 0 0;
-    box-shadow: 0 0 16px #ecebeb59;
     box-sizing: content-box;
     box-shadow: 0 0 16px #888888;
     transition: 0.2s;
@@ -310,6 +315,8 @@ button {
     padding: 20px 0 10px 20px;    
 }
 
+
+
 /* caractéristiques commune de toute la section hebergement  */
 
 .marseille-most-popular {
@@ -320,7 +327,7 @@ button {
 .left-bloc:hover,
 .right-bloc:hover,
 .activity-marseille:hover{
-    transform: scale(1.06);
+    transform: scale(1.04);
     box-shadow:  0 0  10px  #0065fc ;
 }
 
@@ -335,6 +342,12 @@ button {
 
 .nad-star {
     color: rgba(179, 177, 177, 0.205);
+}
+
+.price-marseille:hover{
+    color: #0065fc;
+    font-weight: 900;
+
 }
 
 
@@ -413,7 +426,11 @@ button {
 
 .sublist li {
     font-size: 130%;
-}    
+}   
+
+.sublist li a:hover{
+    color: #0065fc;
+}
 
 /*  media queries  */
 
