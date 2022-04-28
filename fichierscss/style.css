@@ -362,11 +362,10 @@ button:hover{
 }
 
 .activity-marseille {
-    max-width: 23%;
-    max-height: 600px;
+   width: 23%;
     border-radius: 30px;
     transition: 0.2s;
-    box-shadow: 3px 3px 3px #f2f2f2;
+    box-shadow: 5px 5px 5px #d6d6d6;
 }
 
 .activity img {
@@ -376,20 +375,21 @@ button:hover{
 }
 
 .act-place h4 {
-    padding: 20px;
-    font-size: 100%;
+    padding: 15px 0 15px 20px;
+
     min-width: 250px;
+    font-size: 14px;
 }
 .high {
-    height: 468px;
+    height: 463px;
 }
 
 .midle {
-    height: 200px;
+    height: 210px;
 }
 
 .short {
-    height: 180px;
+    height: 170px;
 }
 
 
